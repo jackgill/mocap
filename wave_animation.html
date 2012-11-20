@@ -3,7 +3,14 @@
 .point { width: 10px; height: 10px; background-color: red; position: absolute; }
 .container { width: 640px; height: 480px; float: left }
 #point0 { animation-name: point0; animation-duration: 4s; }
+#point0 { -webkit-animation-name: point0; -webkit-animation-duration: 4s; }
 @keyframes point0 {
+	0% { left: 351px; top: 154px }
+	33% { left: 354px; top: 106px }
+	66% { left: 176px; top: 272px }
+	100% { left: 172px; top: 370px }
+}
+@-webkit-keyframes point0 {
 	0% { left: 351px; top: 154px }
 	33% { left: 354px; top: 106px }
 	66% { left: 176px; top: 272px }
