@@ -18,19 +18,25 @@
 }
 </style></head><body><div class="container">
 <div id="point0" class="point"></div>
-</div><img id="image"/>
+</div>
+<img id="image0" class="image" style="display: none" src="wave/00.jpg"/>
+<img id="image1" class="image" style="display: none" src="wave/01.jpg"/>
+<img id="image2" class="image" style="display: none" src="wave/02.jpg"/>
+<img id="image3" class="image" style="display: none" src="wave/03.jpg"/>
 
 <script>
   count = 0;
   n_images = 4;
   function updateImage() {
-    $('#image').attr('src', 'wave/0' + count + '.jpg');
+    $('.image').hide();
+    $('#image' + count).show();
     if (count < n_images) {
       count++;
       setTimeout(updateImage, 1000);
     }
     else {
       $('.point').hide();
+      $('.image').hide();
     }
   }
   $(document).ready(function() {
