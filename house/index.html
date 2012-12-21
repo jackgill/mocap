@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery-1.8.3.min.js"></script>
+        <script src="house.js"></script>
+        <script src="number-polyfill.js"></script>
+        <link rel="stylesheet" href="number-polyfill.css" />
+        <link rel="stylesheet" href="house.css" />
+    </head>
+    <body>
+        <h1>House Builder</h1>
+        <div id="controls">
+            <fieldset>
+                <legend>Partner</legend>
+
+                <label>1. Emotional</label>
+                <input type="number" value="100" name="leftPanelLeftHeight" min="0" max="100" step="1">
+
+                <br> 
+                
+                <label>2. Relationships</label>
+                <input type="number" value="100" name="leftPanelWidth" min="0" max="100" step="1">
+
+                <br> 
+                
+                <label>3. Health</label>
+                <input type="number" value="100" name="leftPanelRightHeight" min="0" max="100" step="1">
+
+            </fieldset> 
+
+             <fieldset>
+                <legend>Housing</legend>
+                
+                <label>4. Rent Paid</label>
+                <input type="number" value="100" name="topPanelWidth" min="0" max="100" step="1">
+
+                <br>
+
+                <label>5. Housekeeping</label>
+                <input type="number" value="100" name="topPanelLeftHeight" min="0" max="100" step="1">
+
+                <br> 
+                
+                <label>6. Finances</label>
+                <input type="number" value="100" name="topPanelRightHeight" min="0" max="100" step="1">
+
+            </fieldset>            
+
+            <fieldset>
+                <legend>Engagement</legend>
+               
+                <label>7. Career</label>
+                <input type="number" value="100" name="rightPanelLeftHeight" min="0" max="100" step="1">
+
+                <br> 
+                
+                <label>8. Community</label>
+                <input type="number" value="100" name="rightPanelWidth" min="0" max="100" step="1">
+
+                <br> 
+
+                <label>9. Life skills</label>
+                <input type="number" value="100" name="rightPanelRightHeight" min="0" max="100" step="1">
+            </fieldset> 
+        </div>
+        <div class="note">Note: you can use the up and down arrow keys to adjust the numbers</div>
+        <canvas id="house" width="575" height="500"></canvas>
+        <img id="family" src="family.png"/>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+#house {
+    border: solid 1px black;
+}
+.note {
+    margin-bottom: 10px;
+}
+fieldset {
+    display: inline;
+}
+label {
+    float: left;
+    width: 120px;
+}
+input {
+    width: 50px;
+}
+#family {
+    display: none;
+}
